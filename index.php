@@ -3,67 +3,104 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title>Home</title>
 </head>
 <body>
-<div id="mainwrapper">
-
-  <header> 
+	<div id="mainwrapper">
+<header> 
     <!--**************************************************************************
     Header starts here. It contains Logo and 3 navigation links. 
     ****************************************************************************-->
-    <div id="logo"><a href="#"><img src="pic/logo.png" width="50px" height="50px"> ระบบลงทะเบียน-รายงานผลการแข่งขันกีฬาสี</a></div>
-    <nav> <a href="index.php" title="Link"><i class="fas fa-house"></i>Home</a> 
-    	<a href="login.php" title="Link"><i class="fa-solid fa-lock"></i>Log in</a> </nav>
-  </header>
+    <div id="logo"> <a href="#"><img src="pic/logo.png" width="50px" height="50px">ระบบลงทะเบียน-รายงานผลการแข่งขันกีฬาสีภายใน</a></div>
+    <nav> <a href="index.php" title="Link">Home</a>
+		<a href="login.php" title="Link">Log in</a> </nav>
+</header>
+  <table width="100%" height="832" border="0" cellpadding="0" cellspacing="0">
+    <tr class="side-con">
+      <td height="87" bgcolor="#F0f0f0">&nbsp;</td>
+      <td bgcolor="#FFFFFF">
+         <form action="" method="get" name="search">
+            <label for="search"></label>
+           <input name="search" type="text" id="search" class="searchbar" placeholder="Search" size="100" >
+        </form>
+      </td>
+      <td bgcolor="#f0f0f0">&nbsp;</td>
+    </tr>
+    <tr class="side-con">
+      <td width="20%" height="369" bgcolor="#F0f0f0">&nbsp;</td>
+      <td bgcolor="#FFFFFF" class="container">
 
-<div class="container">
-  <section>
-  	
-  		<div class="sport">
-  			<div class="head-sp">
-  			<p>
-  				<i class="fa-brands fa-github"> รายการแข่งขัน</i>
-  			</p>
+        <table width="42%" border="1" align="left" cellpadding="0" cellspacing="0" class="sport">
+        <tr>
+          <th width="260" height="39" scope="col">รายการแข่งขัน</th>
+        </tr>
+        <tr>
+          <td height="36"><a href="#">ฟุตบอล</a></td>
+        </tr>
+        <tr>
+          <td height="36"><a href="#">ฟุตซอล</a></td>
+        </tr>
+        <tr>
+          <td height="33"><a href="#">บาสเก็ตบอล</a></td>
+        </tr>
+        <tr>
+          <td height="44"><a href="#">วอลเลย์บอล</a></td>
+        </tr>
+      </table>
+		
+        
+      <div class="login-allin">
+    <div class="login-groupin">
+      <h2>Log in</h2>
 
-  			<ul class="cate">
-  				<li><a href="#">Football</a></li>
-  				<li><a href="#">Footsul</a></li>
-  				<li><a href="#">Basketball</a></li>
-  				<li><a href="#">Volleyball</a></li>
-  			</ul>
-  			</div>
-  		</div>
-  	
-  </section>
+      <form method="post" class="login-formin">
+        <div>
+          <label for="login-user">Username:</label><br>
+          <input type="text" name="user" class="box" placeholder="Enter your username">
+        </div>
 
-  <aside>
-  	
-  		<div class="login-group-1">
-			<h3>Log in</h3>
+         <div>
+          <label for="login-pass">Password:</label><br>
+          <input type="password" name="pass"  class="box" placeholder="Enter your password">
+        </div>
 
-			<form method="post" class="login-form">
-				<div>
-				<label for="login-user">Username :</label><br>
-				<input type="text" name="user"  id="login-user" class="box" placeholder="Enter your username"><br>
-				</div>
-				<div>
-				<label for="login-pass">Password :</label><br>
-				<input type="password" name="pass"  id="login-pass" class="box" placeholder="Enter your password"><br>
-				</div>
-				<div >
-				<input type="submit" name="submit"  class="btn" value="Log in">
-				</div>
-			</form>
-		</div>
-	</div>
-  </aside>
+        <div >
+          <input type="submit" name="submit"  class="btnin" value="Log in">
+        </div>
+      </form>
+      </div>
+    </div>
+</td>
+      <td width="20%" bgcolor="#f0f0f0">&nbsp;</td>
+    </tr>
+    <tr class="side-con">
+      <td height="257" bgcolor="#F0f0f0">&nbsp;</td>
+      <td bgcolor="#FFFFFF" class="container">
+        <table width="35%" border="1"  cellpadding="0" cellspacing="0" class="color">
+        <tr>
+          <th height="40" scope="col">คณะสี</th>
+        </tr>
+        <tr>
+          <td height="45">สีแดง</td>
+        </tr>
+        <tr>
+          <td height="50"><p>สีฟ้า</p></td>
+        </tr>
+        <tr>
+          <td height="45">สีชมพู</td>
+        </tr>
+        <tr>
+          <td height="43">สีเหลือง</td>
+        </tr>
+      </table></td>
+      <td bgcolor="#f0f0f0">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="119" colspan="3"  bgcolor="#666666">Copyright @Samakkhiwittayakhom School. | All Has Reserved.</td>
+    </tr>
+  </table>
 
-  <footer>
-  	<div id="footerbar"><p>Copyright @Samakkhiwittayakhom School. | All Has Reserved.</p></div>
-  </footer>
-</div>
+ 
 </body>
 </html>
