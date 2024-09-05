@@ -6,48 +6,51 @@
 
 #mainwrapper header {
 	/*Header */
-	background-color: lightcoral;
+	background-color: lightseagreen;
 	overflow: auto;
 	font-family: monospace;
-	font-weight: 600;
+	font-weight: 700;
 	display: flex;
-	justify-content: space-between;
+	font-size: 18px;
+
 }
 #mainwrapper header #logo {
 	/* Company Logo text */
 	width: 50%;
 	float: left;
-	padding-left: 2%;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	color: black;
+	padding: 12px 2%;
+	color: rgba(146,146,146,1.00);
+	display: flex;
+	align-items: center;
 }
 
 #mainwrapper header #logo img{
-	border-radius: 100%;
 	display: flex;
 	justify-content: space-between;
+	border-radius: 100%;
+	align-items: center;
 	margin-right: 12px;
 }
 
+
 #mainwrapper header #logo a{
+	text-decoration: none;
 	display: flex;
 	align-items: center;
-	text-decoration: none;
 	color: black;
-	font-size: 15px;
 }
-
 #mainwrapper header nav {
 	/*Nav bar containing links in header */
 	text-align: right;
 	padding: 12px 2%;
-	width: 50%;
+	width: 40%;
+	float: left;
+	color: black;
 	margin: auto;
 }
 header nav a {
 	/* Links in header */
-	margin-right: 30px;
+	padding-right: 25px;
 	color: black;
 	text-decoration: none;
 	transition: 0.4s ease;
@@ -55,155 +58,221 @@ header nav a {
 
 nav a:hover{
 	color: yellow;
+}.side-con {
+	color: #999;
+}
+.side-con td {
+	color: #CCC;
+}
+.side-con {
+	color: #999;
+}
+ td {
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 18px;
+	text-decoration: none;
 }
 
-header nav i{
-	margin-right: 5px;
-}
-
-
-.login-page{
-	background-color: #fcf5c7;
-}
-
-.container-log{
+.login-all{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-
 }
 
 .login-group{
-	width: 280px;
-	border: 1px solid lightgray;
-	box-shadow: 2px 2px 10px lightgray;
+	border: 1px black solid;
 	border-radius: 10px;
+	box-shadow: 10px 10px 5px lightcoral;
+	width: 400px;
 	text-align: center;
-	padding: 12px;
+	padding: 15px;
 	background-color: white;
+}
+
+.login-group h2{
+	margin-bottom: 30px;
+	font-size: 30	px;
 }
 
 .login-form{
-	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 15px;
+}
+
+.login-form label{
+	text-align: left;
+	font-size: 20px;
+	margin-bottom: 15px;
 }
 
 .box{
-	height: 25px;
-	margin-bottom: 12px;
-	width: 80%;
-	align-content: center;
-	margin-top: 12px;
-	background-color: #e1e1e1;
-	border: none;
-	border-radius: 3px;
+	padding: 8px;
+	margin-bottom: 15px;
+	background-color: #f1f1f1;
+	border-radius: 80px;
 }
 
 .btn{
-	color: white;
-	font-size: 12px;
-	border-radius: 8px;
-	width: 60px;
+	margin: 10px;
+	border-radius: 80px;
 	border: none;
-	background-color: lightcoral;
+	width: 20%;
 	height: 30px;
-	font-weight: 700;
-	transition: 0.5s ease;
-}
-
-.btn:hover{
-	background-color: red;
-}
-
-.container{
-	max-width: 1170px;
-	margin:  auto;
-	background-color: #fcf5c7;
-	max-height: 100%;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	padding-left: 30px;
-}
-
-.sport i{
-	font-weight: 600;
-	padding-left: 15px;
+	color: black;
+	background-color: limegreen;
 	transition: 0.4s ease;
-	cursor: pointer;
+}
+.btn:hover{
+	background-color: green;
 }
 
-.sport i:hover{
-	color: yellow;
+.searchbar{
+	height: 40px;
+	border-radius: 80px;	
+	margin-top: 20px;
 }
-.cate li{
+
+placeholder{
+	margin-left: 35px;
+}
+
+
+table{
+	border-collapse: collapse;
+
+}
+.sport tr{
+	vertical-align: top;
+	border-spacing: 0;
+}
+
+
+td, th{
+	vertical-align: top;
+	padding-left: 25px;
+}
+
+.sport  th{
+	color: black;
+	text-align: left;
+	width: 100%;
+	background-color: lightseagreen;
 	display: flex;
-	list-style: none;
+	align-items: center;
+
+}
+.sport  td{
+	color: black;
+	transition: 0.4s ease;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 10px;
-	outline: solid;
-	outline-width: 0.5px;
-	margin: auto ;
-
+	padding: 0;
 }
 
-.cate li a{
+
+.sport  td a{
 	text-decoration: none;
 	color: black;
-	font-family: monospace;
-	font-weight: 600;
-	font-size: 15px;
-	text-align: center;
-	
 }
-.cate li a:hover{
-	background-color: orange;
-	width: 100%;
-
-}
-.head-sp{
-	border: 1px solid;
-	width: 300px;
-	border-radius: 10px	;
-}
-
-.head-sp p{
+.sport td:hover{
 	background-color: skyblue;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	height: 30px;
-	text-align: center;
+}
+
+.login-allin{
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
-.sport{
-	display: flex;
-	
-	margin-top: 20px;
-}
 
-.login-group-1{
-	
-	width: 500px;
-	border: 1px solid lightgray;
-	
+.login-groupin{
+	border: 1px black solid;
 	border-radius: 10px;
+	width: 400px;
 	text-align: center;
-	padding: 12px;
+	padding: 5px;
 	background-color: white;
-	margin-top: 20px;
 }
 
-#footerbar {
-	/* Footer bar at the bottom of the page */
-	height: 18px;
-	clear: both;
-	background-color: rgba(208,207,207,1.00);
+.login-groupin h2{
+	margin-bottom: 10px;
+	color: black;
+	font-size: 30px;
+}
+
+.login-formin{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 5px;
+}
+
+.login-formin label{
+	text-align: left;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.box{
+	padding: 8px;
+	margin-bottom: 15px;
+	background-color: #f1f1f1;
+	border-radius: 80px;
+	width: 80%;
+}
+
+.btnin{
+	margin: 5px;
+	border-radius: 80px;
+	border: none;
+	width: 20%;
+	height: 30px;
+	color: black;
+	background-color: lime;
+	transition: 0.4s ease;
+}
+.btnin:hover{
+	background-color: green;
+}
+.container{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.color{
+	justify-content: left;
+}
+
+.color  th{
+	color: black;
+	text-align: left;
 	width: 100%;
-	}
+	background-color: lightseagreen;
+	display: flex;
+	align-items: center;
 
-#footerbar p{
-	color: white;
-	text-align: center;
+}
+.color  td{
+	color: black;
+	transition: 0.4s ease;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
 }
 
+
+.color  td a{
+	text-decoration: none;
+	color: black;
+}
+.color td:hover{
+	background-color: skyblue;
+}
